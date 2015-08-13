@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<script type="text/javascript">
+var prevObjectID = null;
+var prevLayer = 0;			
+
+function setLayer(objectID,layerNum) {
+	var object = document.getElementById(objectID);
+	object.style.zIndex = layerNum;
+}
+
+function findLayer(objectID) {
+	var object = document.getElementById(objectID);
+	if (object.style.zIndex != null)
+		return object.style.zIndex;
+	return (null);
+}
+
+function swapLayer(evt) {
+	var objectID = (evt.target) ? evt.target.id : ((evt.srcElement) ? evt.srcElement.id : null);
+	if (prevObjectID != null) setLayer(prevObjectID,prevLayer);
+	prevLayer = findLayer(objectID);
+ 	prevObjectID = objectID;
+ 	setLayer(objectID,1000);
+}
+</script>

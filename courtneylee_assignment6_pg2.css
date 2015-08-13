@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.dropBox {
+	text-align: right;
+	padding: 4px;
+	background-color: #FFFFFF;
+	border: 2px solid #f00;
+	cursor: pointer;
+}
+
+#object1 {
+	position: absolute;
+	z-index: 3;
+	top: 617px;
+	left: 810px;
+	background: white url(scarfmini.jpg)no-repeat;
+	height:220px;
+	width:150px;
+	}
+
+#object2 {
+	position: absolute;
+	z-index: 2;
+	top: 574px;
+	left: 698px;
+	background: white url(illdinner.jpg) no-repeat;
+	height:264px;
+	width:200px;
+	}
+
+#object3 {
+	position: absolute;
+	z-index: 1;
+	top: 500px;
+	left: 588px;
+	background: white url(Gee.jpg) no-repeat;
+	height:336px;
+	width:250px;
+	}
+
+#object4 {
+	position: absolute;
+	z-index: 0;
+	top: 427px;
+	left: 483px;
+	background: white url(TGee%20.jpg)no-repeat;
+	height:408px;
+	width:300px;
+	}
+h3 {position:relative; top:500px; left:20px; }
+.return {position:relative; top:510px; left:20px; }

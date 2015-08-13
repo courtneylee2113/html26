@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>courtneylee_assignemnt6_pg1</title>
+
+<script type="text/javascript">
+function setDisplay(objectID,state) {
+	var object = document.getElementById(objectID);
+	object.style.display = state;
+}
+
+function toggleDisplay(objectID) {
+	var object = document.getElementById(objectID);
+	state = object.style.display;
+	if (state == 'none')
+		object.style.display = 'block';
+	else if (state != 'none')
+		object.style.display = 'none'; 
+}
+</script>
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+
+<link href="courtneylee_assignment6.css" rel="stylesheet" type="text/css" />
+<link href="courtneylee_assignment6_pg1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header"> <h1>Taryn Gee Illustration </h1>
+</div>
+<div id="nav">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="courtneylee_assignment6_pg1.html">Home</a></li>
+    <li><a href="courtneylee_assignment_6_pg2.html">Gallery</a></li>
+    <li><a href="http://taryntaryn.tumblr.com/">Tumblr</a></li>
+    <li><a href="https://twitter.com/TarynGee">Twitter</a></li>
+    <li><a href="https://www.facebook.com/yaytaryn?fref=ts">Facebook</a></li>
+    </ul>
+    </div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+<div id="main">
+<body onload="setDisplay('TGee','block');">
+<a 
+	onclick="setDisplay('TGee','none');" 
+	href="javascript:void('')">Remove Taryn</a> | 
+<a 
+	onclick="setDisplay('TGee','block');" 
+	href="javascript:void('')">Display Taryn</a> | 
+<a 
+	onclick="toggleDisplay('TGee');" 
+	href="javascript:void('')">Change the Taryn's Display State</a>
+<div id="TGee">
+<img src="TGee .jpg"height="400" width="416" border="0" alt="Taryn Gee" />
+</div>
+</div>
+<div id="sidebar">
+<img class="img_black" src="Gee.jpg" height="400" width="250" alt="Instagram shot" />
+
+
+</div>
+<div id="footer">
+</div>
+
+
+
+</body>
+</html>
